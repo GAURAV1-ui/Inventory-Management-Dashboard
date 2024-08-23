@@ -83,7 +83,7 @@ const Sidebar = () => {
       >
         <Image
           src=""
-          alt="edstock-logo"
+          alt="gaurav-logo"
           width={27}
           height={27}
           className="rounded w-8"
@@ -93,7 +93,7 @@ const Sidebar = () => {
             isSidebarCollapsed ? "hidden" : "block"
           } font-extrabold text-2xl`}
         >
-          EDSTOCK
+          Gaurav
         </h1>
 
         <button
