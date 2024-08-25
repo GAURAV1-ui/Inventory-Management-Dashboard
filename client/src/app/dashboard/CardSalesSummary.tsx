@@ -13,7 +13,8 @@ import {
 
 const CardSalesSummary = () => {
   const { data, isLoading, isError } = useGetDashboardMetricsQuery();
-  const salesData = data?.salesSummary || [];
+  const salesData = data?.saleSummary || [];
+  console.log(data, "data");
 
   const [timeframe, setTimeframe] = useState("weekly");
 
