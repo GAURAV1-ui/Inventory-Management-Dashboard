@@ -18,8 +18,6 @@ import {
   
     const expenseByCategorySummary =
       dashboardMetrics?.expenseByCategorySummary || [];
-
-      console.log(expenseByCategorySummary);
   
     const expenseSums = expenseByCategorySummary.reduce(
       (acc: ExpenseSums, item: ExpenseByCategorySummary) => {
