@@ -2,7 +2,7 @@ import { useGetDashboardMetricsQuery } from "@/state/api";
 import { ShoppingBag } from "lucide-react";
 import React from "react";
 import Rating from "../(components)/Rating";
-// import Image from "next/image";
+import Image from "next/image";
 
 const CardPopularProducts = () => {
   const { data: dashboardMetrics, isLoading } = useGetDashboardMetricsQuery();
@@ -24,16 +24,13 @@ const CardPopularProducts = () => {
                 className="flex items-center justify-between gap-3 px-5 py-7 border-b"
               >
                 <div className="flex items-center gap-3">
-                  {/* <Image
-                    src={`https://s3-inventorymanagement.s3.us-east-2.amazonaws.com/product${
-                      Math.floor(Math.random() * 3) + 1
-                    }.png`}
+                  <Image
+                    src=""
                     alt={product.name}
                     width={48}
                     height={48}
                     className="rounded-lg w-14 h-14"
-                  /> */}
-                  <div>img</div>
+                  />
                   <div className="flex flex-col justify-between gap-1">
                     <div className="font-bold text-gray-700">
                       {product.name}
@@ -52,7 +49,7 @@ const CardPopularProducts = () => {
                   <button className="p-2 rounded-full bg-blue-100 text-blue-600 mr-2">
                     <ShoppingBag className="w-4 h-4" />
                   </button>
-                  <span>{Math.round(product.stockQuantity / 1000)}k Sold</span>
+                  {Math.round(product.stockQuantity / 1000)}k Sold
                 </div>
               </div>
             ))}
