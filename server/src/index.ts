@@ -19,7 +19,7 @@ app.use(morgan('common'));
 app.use(cors());
 
 app.use('/dashboard', dashboardRoutes);
-app.use('/product', productRoutes);
+app.use('/products', productRoutes);
 
 const port = process.env.PORT || 8000;
 
